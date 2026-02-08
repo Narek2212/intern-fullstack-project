@@ -1,0 +1,13 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, Arial, sans-serif; }
+.container { max-width: 900px; margin: 0 auto; padding: 16px; }
+
+.header { padding: 12px 16px; border-bottom: 1px solid #ddd; }
+/* TODO: flexbox here */
+.logo { font-weight: 700; }
+.nav { }
+.nav a { text-decoration: none; padding: 8px 10px; border-radius: 10px; }
+.nav a:hover { background: #f3f3f3; }
+
+.btn { border: 1px solid #ddd; background: white; border-radius: 10px; padding: 8px 12px; }
+.btn:hover { background: #f3f3f3; }

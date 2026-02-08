@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!-- TODO: Implement requirements from README -->
+    <header class="header">
+      <div class="logo">Your Name</div>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="btn" href="#projects">View Projects</a>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <h1>Your Name</h1>
+        <p>Short intro about you.</p>
+        <a class="btn" href="#contact">Contact me</a>
+      </section>
+
+      <section id="about" class="about">
+        <div>
+          <h2>About</h2>
+          <p>Write 4–6 sentences about yourself.</p>
+        </div>
+        <div class="aboutImage" aria-hidden="true"></div>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="grid">
+          <article class="card"><h3>Project 1</h3><p>Desc</p></article>
+          <article class="card"><h3>Project 2</h3><p>Desc</p></article>
+          <article class="card"><h3>Project 3</h3><p>Desc</p></article>
+          <article class="card"><h3>Project 4</h3><p>Desc</p></article>
+          <article class="card"><h3>Project 5</h3><p>Desc</p></article>
+          <article class="card"><h3>Project 6</h3><p>Desc</p></article>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <form class="form">
+          <label for="name">Name</label>
+          <input id="name" name="name" required />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button class="btn" type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <small>© Your Name</small>
+      </div>
+    </footer>
+  </body>
+</html>
