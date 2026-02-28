@@ -6,31 +6,49 @@
     <title>Exercise 01 — Semantic HTML</title>
   </head>
   <body>
-    <!-- TODO: Refactor into semantic HTML WITHOUT changing text content -->
-    <div class="top">
-      <div class="menu">
-        <div>Home</div>
-        <div>Projects</div>
-        <div>Contact</div>
-      </div>
-    </div>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <div class="content">
-      <div class="title">Your Name</div>
-      <div class="block">I build apps.</div>
+    <main>
+      <section>
+        <h1>Your Name</h1>
+        <p>I build apps.</p>
+      </section>
 
-      <div class="block">
-        <div class="title2">Projects</div>
-        <div class="item">Project A</div>
-        <div class="item">Project B</div>
-      </div>
+      <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+          <li>Project A</li>
+          <li>Project B</li>
+        </ul>
+      </section>
 
-      <div class="block">
-        <div class="title2">Contact</div>
-        <div>Name: <input /></div>
-        <div>Email: <input /></div>
-        <div><button>Send</button></div>
-      </div>
-    </div>
+      <section id="contact">
+        <h2>Contact</h2>
+        <form>
+          <div>
+            <label for="name">Name:</label>
+            <input required type="text" id="name" />
+          </div>
+          <div>
+            <label for="email">Email:</label>
+            <input required type="email" id="email" />
+          </div>
+          <div>
+            <button type="submit">Send</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>Copyright 2026, NH</p>
+    </footer>
   </body>
 </html>

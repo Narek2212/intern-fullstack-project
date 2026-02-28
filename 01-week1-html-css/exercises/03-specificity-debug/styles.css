@@ -1,10 +1,31 @@
 * { box-sizing: border-box; }
-body { margin: 0; font-family: system-ui, Arial, sans-serif; }
-.container { max-width: 900px; margin: 0 auto; padding: 16px; }
-.card { border: 1px solid #ddd; border-radius: 12px; padding: 16px; }
+
+body {
+  margin: 0;
+  font-family: system-ui, Arial, sans-serif;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 16px;
+}
 
 p { color: red; }
+
 .card p { color: blue; }
+
 #hero p { color: green; }
+
+
+#hero.card p {
+  color: blue;
+}
 
 /* TODO: Make the <p> text BLUE without deleting rules and without using !important */
