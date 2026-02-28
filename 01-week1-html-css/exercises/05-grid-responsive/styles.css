@@ -9,4 +9,17 @@ body { margin: 0; font-family: system-ui, Arial, sans-serif; }
    - 2 columns >=600px
    - 3 columns >=900px
 */
-.grid { display: grid; gap: 16px; grid-template-columns: 1fr; }
+.grid { display: grid; gap: 16px;grid-template-columns: 1fr;}
+
+@media (min-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
