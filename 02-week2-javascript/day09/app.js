@@ -38,9 +38,22 @@ async function load() {
     setStatus("Loading...");
     // TODO:
     // 1) fetch posts from a public JSON placeholder API (search: JSONPlaceholder posts)
+    const response = await fetch("https://jsonplaceholder.typicode.com/posts");
+     if (!response.ok) {
+      throw new Error("Network response was not ok");
+    }
     // 2) set items = fetched array
+    const data = await response.json();
+    items = data;
+
+    if (items.length > 0) {
+      selectedId = items[0].id;
+    }
     // 3) setStatus("")
+    setStatus("");
     // 4) renderList() + renderDetails()
+    renderList();
+    renderDetails();
   } catch (err) {
     console.error(err);
     setStatus("Error loading data.");
